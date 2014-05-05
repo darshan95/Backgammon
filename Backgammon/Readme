@@ -1,0 +1,36 @@
+************************************************BACKGAMMONGAME******************************************************
+
+Input Format:
+[24-digit-array] from bottom-right corner of the board.
+bar-variables(example: aaabbbbb => 3 checkers of the player and 5 checkers of the opponent)
+R1 R2(dice inputs)
+
+
+output format:
+S1 D1
+S2 D2
+
+
+if no output possible:
+output will come as pass
+
+if output needs to display bar_variable it uses Z.
+if output needs to display bearing off it uses 0.
+example:
+    z 5
+    5 0
+
+
+Strategy used:
+    -The checkers in the opponents homeboard will try to build an anchor near the opponent's home board.
+    -The strategy will try to build a prim near its home.
+    -Will kill the opponent if it finds it in the players opponent.
+    -Will try to maintain the tower as much as possible
+    -Will try to kill a blot as soon as possible
+
+Run compile.sh script file which when executed will generate a executable named game
+
+
+
+Darshan Agarwal
+201225189
